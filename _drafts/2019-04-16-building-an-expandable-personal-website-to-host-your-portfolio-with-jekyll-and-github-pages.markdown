@@ -6,7 +6,7 @@ date: "2019-04-16 20:27:59 -0700"
 
 ## Getting a ruby development environment
   - Setting Up on Windows
-    - Link to Ravi's article
+    - [Link to Ravi's article](https://raviriley.github.io/tutorial/setting-up-windows-for-jekyll/)
   - Setting Up on Mac
     - https://gorails.com/setup/osx/10.14-mojave
     - Use homebrew for everything
