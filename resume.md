@@ -8,3 +8,5 @@ permalink: /resume/
     </embed>
 </object>
 
+[download](assets/resume/resume.pdf)
+
