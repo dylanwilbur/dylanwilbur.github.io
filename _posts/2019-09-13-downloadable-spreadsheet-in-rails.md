@@ -27,7 +27,7 @@ This might be useful to do if the data needs to be transported for any reason. T
     end
     ```
     
-3.   *Add a `to_csv` method to the model's class*
+3.  **Add a `to_csv` method to the model's class**
 
     In `model.rb`
     ```ruby
@@ -41,21 +41,21 @@ This might be useful to do if the data needs to be transported for any reason. T
     end
     ```
 
-4.   *Add xls to mime types*
+4.  **Add xls to mime types**
     
     In `config/initializers/mime_types.rb`
     ```ruby
     Mime::Type.register "application/xls", :xls
     ```
     
-5.   *Require csv in the model class*
+5.  **Require csv in the model class**
     
     In `model.rb`
     ```ruby
     require 'csv'
     ```
     
-6.   *Add an xls format file to serve*
+6.  **Add an xls format file to serve**
     
     In `index.xls.erb`
     (fill in erb code specific to model)
