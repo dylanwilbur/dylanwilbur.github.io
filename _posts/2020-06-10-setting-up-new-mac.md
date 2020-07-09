@@ -41,7 +41,7 @@ The `cask` part is typically used for stuff that isn't a CLI. For CLI stuff, you
 `brew install python3`
 
 ### Oh My Zsh
-Allows me to trick out my terminal window. The github is [here]() and it'll give more info but you can install it by running this on the terminal:
+Allows me to trick out my terminal window. The github is [here](https://github.com/ohmyzsh/ohmyzsh) and it'll give more info but you can install it by running this on the terminal:
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
 I personally use the [ Spaceship prompt ](https://github.com/pascaldevink/spaceship-zsh-theme)
@@ -74,7 +74,7 @@ The first one I use almost every five minutes, and it's one of those things wher
 ##### Used For: Command+Tab App switching, Windows style
 ##### Price: $10
 
-One thing windows does right is their ctrl+tab app switcher. On MacOS, by default you can only switch between different apps, not specific windows. So if you have, say, 2 iTerm windows open, you're out of luck if you want to command tab to one of them in particular. It was writing this that made me go and redownload this app because the default was so annoying.
+One thing windows does right is their alt+tab app switcher. On MacOS, by default you can only switch between different apps, not specific windows. So if you have, say, 2 iTerm windows open, you're out of luck if you want to command tab to one of them in particular. It was writing this that made me go and redownload this app because the default was so annoying.
 
 Dark Mode, of course.
 
