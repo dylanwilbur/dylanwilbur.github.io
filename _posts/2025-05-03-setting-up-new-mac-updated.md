@@ -5,14 +5,16 @@ title: Setting Up A New Macbook- Updated 2025
 ![](/assets/images/terminal.png)
 
 ## Motivation
-I have been writing code with MacOS in one form or another for almost 15 years at this point. I've tried almost every 'productivity' tool or setup out there over that time, and I've dialed in what I use during my day-to-day workflow to a point I'm quite happy with. Time spent learning and implementing tools to minimize friction across workflows is generally well spent- if you are even 10% more efficient at something, that compounds drastically over time, especially if you are doing that thing 100x per day. Every tool, decision, workflow here is a means to that end.
+I have been writing code and doing work with MacOS in one form or another for almost 15 years at this point. I have tried a wide variety of tools and setups, but I've dialed it in to a point I'm quite happy with. This article will go over the decisions I've made and tools I've selected to get things done extremely fast, and often in a way I find very enjoyable.
 
-Hope anyone reading this can pick up at least one new thing that'll reduce that friction for you too. I'm going to generally go over this in order from most to least impactful on my daily work.
+I hope anyone reading this can pick up at least one new thing that'll reduce some friction for you too. I'm going to generally go over this in order from most to least impactful on my daily work.
 
 ### TLDR:
 - I highly recommend learning vim if you write code.
     - play this game for a bit: [vim adventures](https://vim-adventures.com)
     - install the [vim](#vim) plugin in the editor of your choice
+- I prefer sensible defaults over customization
+    - Cursor, stock zsh, stock lazyvim, claude are my tools of choice
 - Use a [clipboard history manager](#clipboard-history-manager) like the one in [alfred](https://www.alfredapp.com/help/features/clipboard/)
 - I highly recommend [alfred](#alfred) in general.
 
@@ -20,11 +22,11 @@ Hope anyone reading this can pick up at least one new thing that'll reduce that 
 
 ### Why MacOS?
 Not much to say here- I've tried linux and windows separately, and I'll always prefer Mac for a few reasons:
-- **Unix shell**: Incredibly nice to have a shell environment in unix. Most thing I need to do will involve the shell in some way, and in my opinion having a unix shell allows me to do much of the same things I would do on a linux. That compatibility helps any time you need to hop on linux for any reason
+- **Unix shell**: Incredibly nice to have a shell environment in unix. Most thing I need to do will involve the shell in some way, and in my opinion having a unix shell allows me to do much of the same things I would do on a linux. That compatibility helps any time you need to hop on linux for any reason.
 - **Sensible defaults**: Most things just work. While something like ubuntu might offer more customization, for me personally, I find that the abundance of customization options just adds too much decision fatigue. I'll take the reduction of overhead over greater customization, at least for now.
 
 ## Vim
-I have been using vim motions to edit text since 2016, and have used neovim as my main editor on and off since then. I've been asked on a few occasions to 'sell' people on vim. My typicall response is just to blindly trust me, start using it, and you will see for yourself how indespensible it will become after that initial learning curve.  First off, I can't overstate enough how impactful vim for everything I write. If I could only keep one thing on this list, it would be vim without any question. I would go as far as to say that any person writing code for a living needs to pick this up, you will take it with you the rest of your life. Here's a few quick reasons.
+I have been using vim motions to edit text since 2016, and have used neovim as my main editor on and off since then. I've been asked on a few occasions to 'sell' people on vim. My typical response is just to blindly trust me, start using it, and you will see for yourself how indispensable it will become after that initial learning curve.  First off, I can't overstate enough how impactful vim for everything I write. If I could only keep one thing on this list, it would be vim without any question. I would go as far as to say that any person writing code for a living needs to pick this up, you will take it with you the rest of your life. Here's a few quick reasons.
 
 **Editing speed**:
 Not having to take your fingers off the keyboard for doing most things ends up saving a ton of time. Most of the time, writing text or code isn't just about how fast you can type, it's about changing things, duplicating things, navigation, and much more. This is where vim motions in particular let you reach a flow state where you can minimize the time from thought -> action to about as low as it can go.
@@ -78,13 +80,13 @@ Also, I have `alias vim='nvim'` in my `~/.zshrc` to always boot lazyvim if I nee
 - I map `C-u` and `C-d` to be `C-u zz` and `C-d zz` to center the page upon scroll
 
 ### Why I don't main Nvim
-Very similar reason as to why I go with MacOS over linux- I have learned to seriously value sensible defaults over customization. For me personally, when I am given the option of endless customization, I will often end up endlessly customizing(at the expense of getting work done). Maybe this will change in the future, but for now I stick to [cursor](#cursor) (previously vscode)
+Very similar reason as to why I go with MacOS over linux- I have learned to seriously value sensible defaults over customization. For me personally, when I am given the option of endless customization, I will often end up endlessly customizing(at the expense of getting work done). Maybe this will change in the future, but for now I stick to [cursor](#cursor) (previously VSCode).
 
 
 ## Cursor
 ![](/assets/images/cursor.png)
 
-Obviously AI code editors are generally in their infancy, but for now I've found Cursor to be pretty great for my daily needs. Since it's just a VSCode fork, I genuinely don't really see a reason to use VSCode anymore(please enlighten me if there is). There's a lot more to it than just something that can get claude to write code for you. Here's why:
+Obviously AI code editors are generally in their infancy, but for now I've found Cursor to be pretty great for my daily needs. Since it's just a VSCode fork, I genuinely don't really see a reason to use VSCode anymore(please enlighten me if there is). There's a lot more to it than just something that can get claude to write code for you. I'm open to switching, but here's some things I love about Cursor:
 
 **CMD+K**:
 One of the best features of Cursor in my opinion is CMD+K. I love to be able to highlight a small piece of text while I'm editing or writing something, and either:
@@ -97,7 +99,7 @@ In particular, this is great if I don't know the syntax for something, and I don
 As we all know, LLMs are only as good as the context you give it, and something like Cursor is the best way to 'be your own RAG', in a sense. Tagging specific files, sections of code, or directories is super easy. This is probably the most useful way to interact with LLMs in a coding context in my opinion.
 
 **Tab Complete**:
-Really, really great at just anticipating certain things that you are about to do. Obviously it can get this wrong a lot of the time, but when it's right it saves a ton of time. Because of this I have `cmd+ctrl+t` and `cmd+ctrl+y` as my keybinds to toggle cursor command tab, so I can turn it off if it's getting in the way.
+Really, really great at just anticipating certain things that you are about to do. Obviously it can get this wrong a lot of the time, but when it's right it saves a ton of time. Because of this I have `cmd+ctrl+t` and `cmd+ctrl+y` as my keybinds to toggle cursor tab, so I can turn it off if it's getting in the way.
 
 **Agent Mode**:
 I use this super sparingly because it can often get things wrong, especially on complex code bases. However, where I think this shines is in simple tasks, writing boilerplate, or spinning up demos. In particular, this can help go from 0 to demo very fast- that being said, I wouldn't rely on it to choose the tech stack and set that up.
@@ -130,7 +132,7 @@ Map visual line navigation. `j` and `k` will move up and down by visual lines, i
 ```
 
 #### Keybinds I use
-Would love to learn more about cool things you can do with vscode, but here's what I find very useful right now. A lot of these are especially useful when working just from a single laptop screen, as I like to be able to quickly and efficiently manage my screen real estate.
+Would love to learn more about cool things you can do with vscode/cursor, but here's what I find very useful right now. A lot of these are especially useful when working just from a single laptop screen, as I like to be able to quickly and efficiently manage my screen real estate.
 
 - `ctrl+backtick`: open terminal
 - `cmd+1/cmd+2`: focus open panes
@@ -141,12 +143,12 @@ Would love to learn more about cool things you can do with vscode, but here's wh
 
 ## Alfred
 
-One of the best apps out there. I use it every day(accourding to the stats, around 8 times per day):
+One of the best apps out there. I use it every day(according to the stats, around 8 times per day):
 ![](/assets/images/alfred_stats.png)
 Here are some of the things I use it for:
 
 ### File nav
-`open + file` or `find + file` will search the disk for files, and either reveal them in finder or open them. This is probably what I use alfred for most, super easy and intuitive way of quickly getting to specific files or folders.
+`open + file` or `find + file` will search the disk for files, and either reveal them in finder or open them. This is probably what I use Alfred for most, super easy and intuitive way of quickly getting to specific files or folders.
 
 ### App launcher
 I use this to open any app with command+space. Because this is so quick and simple, I make the bottom icons hidden by default for more screen real estate:
@@ -155,10 +157,10 @@ $ defaults write com.apple.dock autohide -bool true
 ```
 
 ### Snippets
-I use alfred to manage snippets for commonly typed things. For instance, typing /em will auto expand out my email, and I can use `cmd+shift+x` to browse these snippets
+I use alfred to manage snippets for commonly typed things. For instance, typing /em will auto expand out my email, and I can use `cmd+shift+x` to browse these snippets.
 
 ### Clipboard History Manager
-Incredibly useful. I have `cmd+shift+c` mapped to clipboard history, where I can search through everything that I have copy pasted. Once you get used to using this, it fundamentally changes the way that you interact with your computer. Searchable and nice UI, looks like this:
+Incredibly useful. I have `cmd+shift+c` mapped to clipboard history, where I can search through everything that I have copied to my clipboard. Once you get used to using this, it fundamentally changes the way that you interact with your computer. Searchable and nice UI, looks like this:
 ![](/assets/images/clipboard.png)
 
 ### App Switching
@@ -181,11 +183,11 @@ Simple enough to get started with, rich enough in features to be a forever daily
 
 **Vim mode**
 
-Native vim mode support. Since this is where I write and edit text, this makes a big difference for a notes app
+Native vim mode support. Since this is where I write and edit text, this makes a big difference.
 
 **Speed**
 
-Obsidian feels snappy to me in a way that Notion did not. Low boot time, and I can just get writing much faster. Key commands, search, in-file search, all work to minimize the friction I have getting around the app, and that adds up for me personally compared to Notion or Apple Notes
+Obsidian feels snappy to me in a way that Notion did not. Low boot time, and I can just get writing much faster. Key commands, search, in-file search, all work to minimize the friction I have getting around the app, and that adds up for me personally compared to Notion or Apple Notes.
 
 **Markdown**
 
@@ -200,7 +202,7 @@ To me, Obsidian is the final form of a 'just works' note taking app for me. All 
 
 **Linking between notes**
 
-Really inuitive way of organizing and structuring relationships between notes. Typing `[[` will open a pop up to fuzzy seach over all your files to then link to it. Empty links are great too, new notes can be created this way.
+Really intuitive way of organizing and structuring relationships between notes. Typing `[[` will open a pop up to fuzzy search over all your files to then link to it. Empty links are great too, new notes can be created this way. Also, navigating between notes with `Command+enter` is really useful.
 
 **Daily notes**
 
@@ -211,13 +213,13 @@ I have `cmd+shift+d` mapped to open my daily note. Titled with the days date. I 
 Personally love diagramming with the Excalidraw plugin for things like architecture diagrams or otherwise.
 
 ### Some customization I have
-I mapped `cmd+shift+p` to render the current markdown file with `xelatex` and `pandoc` and export as a pdf. Was somewhat confusing to get this set up but generally quite useful now that I have it.
+I mapped `cmd+shift+p` to render the current markdown file with `xelatex` and `pandoc` and export as a pdf. This was somewhat confusing to get this set up but generally quite useful now that I have it.
 
 ### Other Apps I've tried
 I have historically used a few different options for note taking apps.
 
-- **Notion**: probably my second favorite after Obsidian. Loved using notion for several years. Really great table support, which I think is a disadvantage of Obsidian. Can't describe particularly why, but the usage of Notion just felt slightly bloated for me, Obsidian just felt like less friction to quickly write stuff down.
-- **Apple notes**: I love using stock apple apps when I can; for instance, I use apple reminders as my main task management app. Still use this for some thigs, but Obsidian wins because of vim motions, and just a bit more maturity as a dedicated note taking app.
+- **Notion**: probably my second favorite after Obsidian. Loved using notion for several years. Really great table support, which I think is a disadvantage of Obsidian. Can't describe particularly why, but the usage of Notion just felt slightly bloated for me, and Obsidian just felt like less friction to quickly write stuff down.
+- **Apple notes**: I love using stock apple apps when I can; for instance, I use apple reminders as my main task management app. I still use this for some things, but Obsidian wins because of vim motions, and just a bit more maturity as a dedicated note taking app.
 - **Vimwiki**: Would never consider this these days. Was great when I wanted vim motions note app, but too much friction to use.
 
 ## iTerm2
@@ -307,7 +309,7 @@ Command tab now gives all open windows, not just applications. Incredibly useful
 CMD+` now lets you cycle through windows for the current application. Great when combined with [app keybinds](#ctrlnumbers-to-apps).
 
 #### Fuzzy find open applications
-Mapped to ctrl-space by default. I don't use this much but it's cool
+Mapped to ctrl-space by default. I don't use this much but it's cool.
 
 ## Rectangle
 Also incredibly essential when for managing windows is the ability to quickly manage the display of multiple windows. I use these maps with Rectangle, and use these 100s of times per day:
@@ -320,4 +322,4 @@ I can send a window to another display with `CMD+Shift+HHHHHHH`, which is an int
 
 ## Claude
 
-I want a desktop app that I can use to maintain LLM conversations when needed, and right now Claude desktop does the trick for me. However, 3.7 has been annoying me recently. So might need to switch this to something else.
+I use Claude desktop for now as a quick way to access an LLM. I use `ctrl+3` keybind with [karabiner elements](#karabiner-elements) to quickly toggle this app. It does the job for now but I'm open to switching workflows.
